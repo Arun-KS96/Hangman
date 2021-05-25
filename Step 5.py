@@ -1,5 +1,4 @@
 #Step 5
-from replit import clear
 import random
 from hangman_words import word_list 
 from hangman_art import stages
@@ -27,7 +26,6 @@ for _ in range(word_length):
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
 
-    clear()
     #If the user has entered a letter they've already guessed, print the letter and let them know.
     if guess in display:
       print(f"You already guessed {guess}")
